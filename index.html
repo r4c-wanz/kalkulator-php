@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        roboto: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .text-limit {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+<body class="font-roboto">
+    <div class="w-screen h-screen grid place-content-center">
+        <h1 class="text-2xl font-bold text-center">Rachel Setyawan</h1>
+        <div class="mt-4 grid grid-cols-2 gap-8">
+            <a href="biasa.php" class="bg-white rounded-lg outline-none shadow p-4 grid place-content-center">
+                <h1 class="text-lg font-bold">Kalkulator Biasa</h1>
+            </a>
+            <a href="scientific.php" class="bg-white rounded-lg outline-none shadow p-4 grid place-content-center">
+                <h1 class="text-lg font-bold">Kalkulator Scientific</h1>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
